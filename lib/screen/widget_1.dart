@@ -21,7 +21,27 @@ class _zainState extends State<zain> {
           children: [
             Image.asset("Images/img1.jpeg"),
             Positioned(
-              top: MediaQuery.of(context).size.height * .5,
+              top: MediaQuery.of(context).size.height * .4 / 5,
+              left: MediaQuery.of(context).size.width * .24,
+              child: SizedBox(
+                child: Text(
+                  "مرحبا بك",
+                  style: TextStyle(
+                    fontFamily: 'Cairo',
+                    fontStyle: FontStyle.normal,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 50.0,
+                    color: Color(0xFFFFFFFF),
+                  ),
+                  textAlign: TextAlign.center,
+                  textDirection: TextDirection.rtl,
+                ),
+                width: 202.0,
+                height: 81.0,
+              ),
+            ),
+            Positioned(
+              top: MediaQuery.of(context).size.height * .48,
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height * .5,
@@ -37,9 +57,10 @@ class _zainState extends State<zain> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 450, left: 15),
+                  padding: const EdgeInsets.only(top: 430, left: 15),
                   child: SizedBox(
                     width: 300.0,
+                    height: 75.0,
                     child: ElevatedButton(
                       onPressed: () {
                         Navigator.push(
@@ -49,8 +70,15 @@ class _zainState extends State<zain> {
                             ));
                       },
                       child: const Text(
-                        "1st Text",
-                        style: TextStyle(color: Colors.white, fontSize: 18),
+                        " تسجيل الدخول ",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20.0,
+                          fontFamily: 'Cairo',
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.w400,
+                        ),
+                        textDirection: TextDirection.rtl,
                       ),
                       style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.all(25),
@@ -65,11 +93,18 @@ class _zainState extends State<zain> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 45),
+                  padding: const EdgeInsets.only(top: 42),
                   child: Center(
                     child: Text(
-                      '2nd Text',
-                      style: TextStyle(color: Color(0xff2F8254), fontSize: 20),
+                      'المتابعة كضيف',
+                      style: TextStyle(
+                        color: Color(0xff2F8254),
+                        fontFamily: 'Cairo',
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 14.0,
+                      ),
+                      textDirection: TextDirection.rtl,
                     ),
                   ),
                 ),
@@ -85,11 +120,18 @@ class _zainState extends State<zain> {
                       ),
                       Padding(
                         padding: const EdgeInsets.only(
-                          top: 30,
+                          top: 15,
                         ),
                         child: Text(
-                          '3rd text',
-                          style: TextStyle(color: Color(0xffBEB3B3)),
+                          'أو',
+                          style: TextStyle(
+                            color: Color(0xffBEB3B3),
+                            fontFamily: 'Cairo',
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 14.0,
+                          ),
+                          textDirection: TextDirection.rtl,
                         ),
                       ),
                       SizedBox(
@@ -102,7 +144,7 @@ class _zainState extends State<zain> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 25, left: 15),
+                  padding: const EdgeInsets.only(top: 48, left: 15),
                   child: SizedBox(
                     width: 300.0,
                     child: ElevatedButton(
@@ -120,9 +162,15 @@ class _zainState extends State<zain> {
                         //     ));
                       },
                       child: const Text(
-                        "4th Text",
-                        style:
-                            TextStyle(color: Color(0xff147868), fontSize: 18),
+                        "إنشاء حساب جديد",
+                        style: TextStyle(
+                          color: Color(0xff147868),
+                          fontFamily: 'Cairo',
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 20.0,
+                        ),
+                        textDirection: TextDirection.rtl,
                       ),
                       style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.all(25),
