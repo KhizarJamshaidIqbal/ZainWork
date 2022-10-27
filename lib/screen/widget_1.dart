@@ -44,7 +44,7 @@ class _zainState extends State<zain> {
               top: MediaQuery.of(context).size.height * .48,
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * .5,
+                height: MediaQuery.of(context).size.height * .6,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -60,7 +60,7 @@ class _zainState extends State<zain> {
                   padding: const EdgeInsets.only(top: 430, left: 15),
                   child: SizedBox(
                     width: 300.0,
-                    height: 75.0,
+                    height: 76.0,
                     child: ElevatedButton(
                       onPressed: () {
                         Navigator.push(
@@ -70,7 +70,7 @@ class _zainState extends State<zain> {
                             ));
                       },
                       child: const Text(
-                        " تسجيل الدخول ",
+                        "تسجيل الدخول",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20.0,
@@ -93,7 +93,7 @@ class _zainState extends State<zain> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 42),
+                  padding: const EdgeInsets.only(top: 36),
                   child: Center(
                     child: Text(
                       'المتابعة كضيف',
@@ -102,26 +102,26 @@ class _zainState extends State<zain> {
                         fontFamily: 'Cairo',
                         fontStyle: FontStyle.normal,
                         fontWeight: FontWeight.w400,
-                        fontSize: 14.0,
+                        fontSize: 18.0,
                       ),
                       textDirection: TextDirection.rtl,
                     ),
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 30, left: 10, right: 10),
+                  padding: const EdgeInsets.only(top: 30, left: 10, right: 0),
                   child: Row(
                     children: [
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width * .4,
-                        child: const DecoratedBox(
-                          decoration: BoxDecoration(color: Colors.black),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10),
+                        child: Container(
+                          height: 1.0,
+                          width: MediaQuery.of(context).size.width * .4,
+                          color: Color(0xffBEB3B3),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(
-                          top: 15,
-                        ),
+                        padding: const EdgeInsets.only(left: 15, right: 15),
                         child: Text(
                           'أو',
                           style: TextStyle(
@@ -129,37 +129,34 @@ class _zainState extends State<zain> {
                             fontFamily: 'Cairo',
                             fontStyle: FontStyle.normal,
                             fontWeight: FontWeight.w400,
-                            fontSize: 14.0,
+                            fontSize: 20.0,
                           ),
                           textDirection: TextDirection.rtl,
                         ),
                       ),
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width * .4,
-                        child: const DecoratedBox(
-                          decoration: BoxDecoration(color: Colors.black),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 15),
+                        child: Container(
+                          height: 1.0,
+                          width: MediaQuery.of(context).size.width * .35,
+                          color: Color(0xffBEB3B3),
                         ),
-                      ),
+                      )
                     ],
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 48, left: 15),
+                  padding: const EdgeInsets.only(top: 45, left: 15),
                   child: SizedBox(
                     width: 300.0,
+                    height: 75.0,
                     child: ElevatedButton(
                       onPressed: () {
-                        // Navigator.pushNamed(context, 'first_screen');
                         Navigator.push(
                             context,
                             MaterialPageRoute(
                               builder: (context) => First_screen(),
                             ));
-                        // Navigator.pushReplacement(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //       builder: (context) => First_screen(),
-                        //     ));
                       },
                       child: const Text(
                         "إنشاء حساب جديد",
